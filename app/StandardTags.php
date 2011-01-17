@@ -48,6 +48,14 @@ class StandardTags extends WolfTags {
 	}
 
 	/*
+		Puts out the slug of the current page
+		@usage <w:slug /> @endusage
+	*/
+	public function tag_slug() {
+		return $this->page->slug();
+	}
+
+	/*
 		Renders a link to the current page or to the page specified in the
 		argument @url@. HTML attributes like @class="..."@ will be included in
 		the rendered link.
